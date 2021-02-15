@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./public/css/vazir.css">
+    <link rel="stylesheet" href="./public/css/icons.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+    
+    <title>رنگ آمیزی گراف</title>
+    
+</head>
+<body>
+<div id="message">
+
+</div>
+<div class="container d-flex justify-content-between">
+  <nav class="nav flex-column mt-5">
+    <li class="nav-item mt-2 select-item">
+      <input type='hidden' value="default" id="default" class="mode">
+      <input type='hidden' value="public/icons/cursor.png" class="cursor">
+      <img src="public/icons/cursor.png" width="20">
+      <label>اشاره گر</label>
+    </li>
+    <li class="nav-item mt-2 select-item">
+      <input type='hidden' value="addNode" id="addNode" class="mode">
+      <img src="public/icons/plus.png" width="20">
+      <label>افزودن راس</label>
+    </li>
+    <li class="nav-item mt-2 select-item">
+      <input type='hidden' value="addEdge" id="addEdge" class="mode">
+      <img src="public/icons/timeline.png" width="20">
+      <label>افزودن یال</label>
+    </li>
+    <li class="nav-item mt-2 select-item">
+      <input type='hidden' value="remove" id="remove" class="mode">
+      <img src="public/icons/remove(1).png" width="20">
+      <label>حذف</label>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-primary btn-block mt-2" id="makeColorfull">رنگ آمیزی کن</button>
+    </li>
+    <li class="nav-item mt-2">
+      <button type="button" class="btn btn-secondary btn-block" id="makeGray">گراف را خاکستری کن</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" id="clear" class="btn btn-danger btn-block mt-2">صفحه را پاک کن</button>
+    </li>
+    
+  </nav>
+  <div id="container" class="mt-4"></div>
+</div>
+
+</body>
+
+<script src="public/js/jquery-3.3.1.min.js"></script>
+<script src="public/js/popper.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="./node_modules/@antv/g6/dist/g6.min.js"></script>
+<script src="./node_modules/@antv/g6/dist/g6Layout.worker.js"></script>
+<script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+<script src="./main.js"></script>
+</html>
