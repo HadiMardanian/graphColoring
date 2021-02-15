@@ -1,3 +1,1 @@
-please open index.html
-
-choose your mode for draw graph 
+<b>please open index.html</b>
