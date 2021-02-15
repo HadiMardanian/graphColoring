@@ -1,1 +1,1 @@
-<b>please open index.html</b>
+please open index.html
